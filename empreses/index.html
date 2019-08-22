@@ -8,10 +8,11 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<meta name="theme-color" content="#ff6f00">
 	<link rel="icon" href="images/logo.png">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 
 <body>
@@ -20,6 +21,7 @@
 			<ul class="right hide-on-med-and-down">
 				<li><a href="https://elmeutren.app">Inici</a></li>
 				<li><a href="https://elmeutren.app/privadesa">Legal</a></li>
+				<li><a href="https://ajuda.elmeutren.app">Ajuda</a></li>
 				<li><a href="https://elmeutren.app/empreses">Empreses</a></li>
 				<li><a href="https://elmeutren.app/contacte">Contacte</a></li>
 			</ul>
@@ -27,6 +29,7 @@
 			<ul id="nav-mobile" class="sidenav">
 				<li><a href="https://elmeutren.app">Inici</a></li>
 				<li><a href="https://elmeutren.app/privadesa">Legal</a></li>
+				<li><a href="https://ajuda.elmeutren.app">Ajuda</a></li>
 				<li><a href="https://elmeutren.app/empreses">Empreses</a></li>
 				<li><a href="https://elmeutren.app/contacte">Contacte</a></li>
 			</ul>
@@ -40,7 +43,7 @@
 			<div class="row center">
 				<h5 class="header col s12 light">Anuncieu-vos a El meu tren!</h5>
 			</div>
-			<br/><br/>
+			<br /><br />
 			<div class="row center">
 				<a href="https://elmeutren.app/contacte" id="download-button" class="btn-large waves-effect waves-light orange">Demanar més informació</a>
 			</div>
@@ -87,6 +90,13 @@
 			</div>
 		</div>
 	</footer>
+
+	<script>
+		$(document).ready(function() {
+			$(".sidenav").sidenav();
+		});
+	</script>
+
 </body>
 
 </html>
